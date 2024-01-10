@@ -1,38 +1,66 @@
 .App {
+  font-family: sans-serif;
+  padding: 20px;
+  background: url("https://framerusercontent.com/images/gs2YqnOXrs8TYMFXP4cvIxyWhw.svg");
+  background-repeat: no-repeat;
+  /* background-position-x: center; */
+  height: 100vh;
+}
+
+.navbar img {
+  width: 10vw;
+}
+.main {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title .special {
+  color: rgb(237, 177, 24);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.upload-btn {
+  background-color: #814ad8;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.upload-btn:hover {
+  box-shadow: 1px 1px 15px 1px #a57bf4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.VideoInput {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* border: 1px solid #ddd; */
 }
 
-.App-link {
-  color: #61dafb;
+.VideoInput_input {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.VideoInput_video {
+  display: block;
+  margin: 0;
+  height: 80vh;
+  width: 60vw;
+}
+.VideoInput_canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  margin: 0;
+  height: 80vh;
+  width: 60vw;
+}
+
+.VideoInput_footer {
+  background: #eee;
+  width: 100%;
+  min-height: 40px;
+  line-height: 40px;
+  text-align: center;
 }
